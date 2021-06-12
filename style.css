@@ -1,0 +1,119 @@
+body {
+  font: 16px/28px arial;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+/* .container {
+  width: 0;
+  height: 80px;
+  background-color: rgb(0, 0, 0);
+  margin-top: -16px;
+  position: fixed;
+  display: flex;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+} */
+.navbar {
+  position: fixed;
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  top: 0;
+}
+.navbar img {
+  max-width: 350px;
+  max-height: 85px;
+  margin-left: 20px;
+  margin-top: 2px;
+  transition: 0.6s;
+}
+
+.navbar ul {
+  display: flex;
+}
+.navbar ul li {
+  list-style: none;
+  color: white;
+  justify-items: space-between;
+  right: 100px;
+  background-color: black;
+  border-radius: 30px;
+  border: 1px solid white;
+  padding: 6px 15px;
+}
+.menu {
+  margin-top: 2px;
+}
+.content {
+  width: 500px;
+  justify-items: center;
+  margin-left: 30px;
+  margin-top: 150px;
+  line-height: 1.1;
+}
+.content h2 {
+  font-size: 2em;
+  width: 260px;
+  margin-top: -13px;
+}
+.content span {
+  background-color: black;
+  color: white;
+  padding: 6px 20px;
+  margin-top: -20px;
+  border-radius: 20px;
+}
+.row {
+  margin-bottom: 50px;
+  right: 30px;
+  left: 30px;
+  width: 1200px;
+  display: flex;
+}
+
+.col-mb-3 {
+  color: black;
+  margin-top: 20px;
+  font-size: 2em;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 10px;
+
+  margin-left: 60px;
+  padding: 8px 15px;
+}
+@media (max-width: 1200px) {
+  .navbar {
+    width: 78%;
+  }
+  .row {
+    width: 350px;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    margin-bottom: -10px;
+    display: flex;
+  }
+  .col-mb-3 {
+    color: black;
+    margin-top: 20px;
+    font-size: 2em;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 8px 10px;
+    right: 0;
+    left: 0;
+  }
+  .container {
+    width: 100%;
+  }
+  .menu {
+    margin-top: 2px;
+    margin-left: 6vh;
+  }
+}
