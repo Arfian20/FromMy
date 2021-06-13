@@ -33,6 +33,12 @@ body {
 .menu {
   margin-left: 160vh;
 }
+.menu::before {
+  content: "\f0c9";
+  color: white;
+  font-family: fontAwesome;
+  font-size: 20px;
+}
 .navbar ul {
   display: flex;
 }
@@ -41,7 +47,7 @@ body {
   color: white;
 
   background-color: black;
-  border-radius: 30px;
+  border-radius: 10px;
   border: 1px solid white;
   padding: 6px 15px;
 }
